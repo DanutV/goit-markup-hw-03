@@ -19,13 +19,24 @@
 ul {
     list-style-type: none;
 }
-
+/* General settings */
 .global-header .main-nav a {
     text-decoration: none;
 }
-
 .container {
     width: 1200px;
+}
+.section {
+    display: flex;
+}
+.project-card-list {
+    display: flex;
+}
+.global-header {
+    display: flex;
+}
+.link-color{
+    display: flex;
 }
 
 /* Information about Logo */
@@ -45,6 +56,10 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-color);
+}
+.logo,
+.atribut-logo a {
+    text-decoration: none;
 }
 
 /* Information about links */
@@ -94,6 +109,10 @@ ul {
     color: #fff;
     outline-color: transparent;
 }
+.button-list {
+    display: flex;
+    justify-content: center;
+}
 
 /* Information about Cards */
 .project-card {
@@ -122,6 +141,7 @@ ul {
 .footer-section-portfolio {
     background: #2e2f42;
 }
+/* Information about logo in footer */
 .footer-logo::after{
     content: "STUDIO";
     color: #fff;
@@ -139,6 +159,8 @@ ul {
     text-transform: uppercase;
     color: #fff;
 }
+
+/* Information about footer desscription */
 .footer-description {
     font-size: 16px;
     line-height: 1.5;

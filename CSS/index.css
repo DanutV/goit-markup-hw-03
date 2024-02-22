@@ -10,12 +10,15 @@
     sans-serif;
 }
 
+
+/* General settings of all elements */
 *{
     body {
         font-family: var(--text-font-family);
         color: var(--primary-color);
     }
 }
+
 
 ul {
     list-style-type: none;
@@ -24,10 +27,25 @@ ul {
 .global-header .main-nav a{
     text-decoration: none;
 }
-
 .container {
     width: 1200px;
 }
+.secition {
+    display: flex;
+    padding: 94px;
+}
+
+.global-header {
+    display: flex;
+}
+
+.link-color {
+    display: flex;
+}
+
+
+
+
 /* Information of logo WEB */
 .logo::before{
     content:"WEB";
@@ -47,7 +65,10 @@ ul {
     text-transform: uppercase;
     color: var(--secondary-color);
 }
-
+.logo, .atribut-logo a{
+    text-decoration: none;
+}
+/* Information about link */
 .global-header .link-color a{
     font-weight: 500;
     font-size: 16px;
@@ -58,11 +79,13 @@ ul {
     color: var(--visited-links);
 }
 
+/* Information about contacts data */
 .global-header .contacts-data a{
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: var(--primary-color);
+
 }
 .hover-link:hover a {
     color: var(--hover-color);
@@ -71,12 +94,15 @@ ul {
 /* Information about Hero Section */
 .hero-section{
     background-color: var(--secondary-color);
+    width: 1200px;
+    display: flex;
 }
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143em;
     color: #fff;
+    
 }
 /* Information about button service */
 .btn-service {
@@ -99,23 +125,36 @@ ul {
     background-color: var(--button-background-color);
 }
 /* Information about What are We Doing */
-.feature-section {
+.feature-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2em;
     color: var(--secondary-color);
 }
-.feature-section-information {
+.feature-title-information {
     font-size: 16px;
     line-height: 1.5em;
 }
+
+.feature-list {
+    display: flex;
+}
+
 .second-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111em;
     color: var(--secondary-color);
 }
+
+.section-about-doing-list {
+    display: flex;
+}
 /* Information about Our Team */
+
+.section-our-team-list {
+    display: flex;
+}
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -134,6 +173,7 @@ ul {
 
 .footer-section {
     background-color: var(--secondary-color);
+    width: 1200px;
 }
 
 .footer-logo::after {
