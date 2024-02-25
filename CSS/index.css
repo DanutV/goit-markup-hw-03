@@ -4,6 +4,8 @@
 --button-background-color: #4d5ae5;
 --visited-links: #b900b9;
 --hover-color: #0606bd;
+--background-color-section-our-team: #f4f4fd;
+--background-white-color: #fff;
 --heading-font-family: "Raleway",
     sans-serif;
 --text-font-family: "Roboto",
@@ -27,22 +29,23 @@ ul {
 .global-header .main-nav a{
     text-decoration: none;
 }
+
 .container {
     width: 1200px;
 }
-.secition {
+.container-nav-bar {
     display: flex;
-    padding: 94px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.global-header {
-    display: flex;
-}
 
 .link-color {
     display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    
 }
-
 
 
 
@@ -64,6 +67,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-color);
+    
 }
 .logo, .atribut-logo a{
     text-decoration: none;
@@ -79,29 +83,46 @@ ul {
     color: var(--visited-links);
 }
 
+
+
 /* Information about contacts data */
-.global-header .contacts-data a{
+.mail {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: var(--primary-color);
-
 }
-.hover-link:hover a {
+.mail:hover,
+.mail:focus {
     color: var(--hover-color);
 }
- 
+.tel {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.tel:hover,
+.tel:focus {
+    color: var(--hover-color);
+}
+
 /* Information about Hero Section */
 .hero-section{
+    display: flex;
     background-color: var(--secondary-color);
     width: 1200px;
-    display: flex;
+    height: 600px;
+    text-align: center;
+    padding-top: 130px;
 }
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143em;
-    color: #fff;
+    color: var(--background-white-color);
+
     
 }
 /* Information about button service */
@@ -114,7 +135,7 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
-    color: #fff;
+    color: var(--background-white-color);
     cursor:pointer;
 }
 .btn-service:hover {
@@ -136,44 +157,80 @@ ul {
     line-height: 1.5em;
 }
 
+.section-what-we-doing{
+    display:flex;
+}
 .feature-list {
     display: flex;
+    padding-bottom: 120px;
 }
-
-.second-title {
+/* Information about What are we doing Section */
+.what-we-doing-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.title-what-we-doing {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11111em;
     color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 72px;
 }
 
-.section-about-doing-list {
-    display: flex;
-}
 /* Information about Our Team */
 
+.section-our-team {
+    display: flex;
+    background-color: var(--background-color-section-our-team);
+    width: 1200px;
+    
+}
 .section-our-team-list {
     display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 120px;
+    
+}
+.title-our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111em;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 60px 35px;
 }
 .team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2em;
     color: var(--secondary-color);
+    text-align: center;
 }
 .job-team {
     font-size: 16px;
     line-height: 1.5em;
+    text-align: center;
 }
 
 .short-description {
     font-size: 16px;
     line-height: 1.5em;
 }
+.background-card {
+    background-color: var(--background-white-color);
+}
 
+/* Information about footer section */
 .footer-section {
+    display: flex;
     background-color: var(--secondary-color);
     width: 1200px;
+    height: 290px;
+    align-items: center;
+    padding: 120px;
 }
 
 .footer-logo::after {
@@ -191,12 +248,12 @@ ul {
     line-height: 1.16667;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--background-white-color);
 }
 
 .short-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: var(--background-white-color);
 }
